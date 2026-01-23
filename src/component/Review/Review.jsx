@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Star, User, Calendar } from 'lucide-react'; // Optional icons
 
 const Review = () => {
@@ -32,6 +32,10 @@ const Review = () => {
     );
   };
 
+  const inputRef = useRef(null); 
+
+  
+
   return (
     
     <div className='bg-orange-50'>
@@ -63,8 +67,14 @@ const Review = () => {
       <div className="mt-12 p-8 bg-white rounded-3xl border-2 border-dashed border-orange-300 text-center">
         <h3 className="text-xl font-bold text-gray-800 mb-2">Happy with your purchase?</h3>
         <p className="text-gray-500 mb-6">Share your joy with other parents!</p>
-        <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105">
-          Write a Review
+        <h1 className='font-bold'>Write a review</h1>
+        <br />
+        <br />
+        <input ref={inputRef} className='bg-gray-100 h-13 w-full border-2 rounded-2xl ' type="text" name="" id="" />
+        <br />
+        <br />
+         <button onClick={() => (inputRef.current.value = "")} className="bg-green-400 hover:bg-green-400 text-white font-bold py-3 px-8 rounded-full transition-transform hover:scale-105">
+          Submit
         </button>
       </div>
     </div>
