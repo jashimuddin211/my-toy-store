@@ -8,6 +8,7 @@ import Root from './Layout/Root.jsx';
 import Home from './component/Home/Home.jsx';
 import AuthProvider from './context/AuthProvider.jsx';
 import Register from './component/register/Register.jsx';
+import CardDetails from './component/allcard/CardDetails.jsx';
 
 const router = createBrowserRouter([
  {
@@ -21,6 +22,15 @@ const router = createBrowserRouter([
     {
       path:'/register',
       Component:Register
+    },
+    {
+      path:'/cardDetails/:id',
+      loader: async ({ params }) => {
+    const res = await fetch('/index.json');
+    const data = await res.json();
+    return data.find(card => card.toyId === params.id);
+  },
+      Component:CardDetails,
     }
    ]
  },

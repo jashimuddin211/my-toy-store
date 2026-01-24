@@ -8,7 +8,7 @@
     "rating": 4.7,
     "availableQuantity": 75,
     "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/03/31/20/11/lego-1297582_1280.png",
+    "pictureURL": "https://i.postimg.cc/R0br9s2h/image.png",
     "subCategory": "Building Blocks"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.5,
     "availableQuantity": 40,
     "description": "High-speed remote control car with durable wheels and long battery life.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/01/31/20/13/car-2024098_1280.png",
+    "pictureURL": "https://i.postimg.cc/Y9gdVdHx/image.png",
     "subCategory": "Remote Control"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.8,
     "availableQuantity": 120,
     "description": "Soft and cuddly teddy bear perfect for kids and gifts.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/11/29/09/32/teddy-bear-1867563_1280.jpg",
+    "pictureURL": "https://i.postimg.cc/C57sTt63/image.png",
     "subCategory": "Plush Toys"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.6,
     "availableQuantity": 60,
     "description": "Educational puzzle board game that boosts critical thinking skills.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/03/05/19/02/jigsaw-1233877_1280.jpg",
+    "pictureURL": "https://i.postimg.cc/3J0WX3SL/image.png",
     "subCategory": "Educational"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.4,
     "availableQuantity": 55,
     "description": "Poseable superhero action figure with accessories.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2014/12/21/23/56/action-figure-575489_1280.png",
+    "pictureURL": "https://i.postimg.cc/BQtKnX81/image.png",
     "subCategory": "Action Figures"
   },
   {
@@ -68,79 +68,8 @@
     "rating": 4.7,
     "availableQuantity": 25,
     "description": "Beautiful doll house set with furniture and accessories.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/08/06/11/36/dollhouse-2594192_1280.jpg",
+    "pictureURL": "https://i.postimg.cc/hvXtcQCD/image.png",
     "subCategory": "Dolls"
-  },
-  {
-    "toyId": 7,
-    "toyName": "Toy Train Set",
-    "sellerName": "Railway Toys",
-    "sellerEmail": "contact@railwaytoys.com",
-    "price": 69.99,
-    "rating": 4.6,
-    "availableQuantity": 30,
-    "description": "Classic toy train set with tracks and engine.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/02/13/12/26/train-1195932_1280.jpg",
-    "subCategory": "Vehicles"
-  },
-  {
-    "toyId": 8,
-    "toyName": "Kids Football",
-    "sellerName": "Sports Fun",
-    "sellerEmail": "sales@sportsfun.com",
-    "price": 14.99,
-    "rating": 4.3,
-    "availableQuantity": 100,
-    "description": "Lightweight football designed for kids outdoor play.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2014/10/14/20/24/football-488714_1280.jpg",
-    "subCategory": "Sports"
-  },
-  {
-    "toyId": 9,
-    "toyName": "Coloring Art Set",
-    "sellerName": "Creative Kids",
-    "sellerEmail": "art@creativekids.com",
-    "price": 22.99,
-    "rating": 4.8,
-    "availableQuantity": 80,
-    "description": "Complete art and coloring set with crayons and sketchbook.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/11/29/07/45/crayons-1867123_1280.jpg",
-    "subCategory": "Art & Craft"
-  },
-  {
-    "toyId": 10,
-    "toyName": "Robot Toy",
-    "sellerName": "Future Toys",
-    "sellerEmail": "info@futuretoys.com",
-    "price": 79.99,
-    "rating": 4.5,
-    "availableQuantity": 35,
-    "description": "Interactive robot toy with lights, sounds, and movements.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/03/27/21/16/robot-1283768_1280.jpg",
-    "subCategory": "Electronic Toys"
-  },
-  {
-    "toyId": 11,
-    "toyName": "Wooden Blocks Set",
-    "sellerName": "Eco Toys",
-    "sellerEmail": "eco@ecotoys.com",
-    "price": 34.99,
-    "rating": 4.7,
-    "availableQuantity": 70,
-    "description": "Eco-friendly wooden building blocks for toddlers.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2016/03/05/19/02/blocks-1233878_1280.jpg",
-    "subCategory": "Building Blocks"
-  },
-  {
-    "toyId": 12,
-    "toyName": "Kids Bicycle",
-    "sellerName": "Ride On",
-    "sellerEmail": "sales@rideon.com",
-    "price": 129.99,
-    "rating": 4.6,
-    "availableQuantity": 20,
-    "description": "Colorful and safe bicycle designed for kids.",
-    "pictureURL": "https://cdn.pixabay.com/photo/2017/03/27/14/56/bicycle-2178579_1280.jpg",
-    "subCategory": "Outdoor Toys"
   }
+  
 ]
