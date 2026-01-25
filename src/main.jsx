@@ -9,6 +9,7 @@ import Home from './component/Home/Home.jsx';
 import AuthProvider from './context/AuthProvider.jsx';
 import Register from './component/register/Register.jsx';
 import CardDetails from './component/allcard/CardDetails.jsx';
+import Login from './component/register/Login.jsx';
 
 const router = createBrowserRouter([
  {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
       path:'/register',
       Component:Register
+    },
+    {
+path:'login',
+Component:Login,
     },
     {
       path:'/cardDetails/:id',

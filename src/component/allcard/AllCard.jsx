@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "../../context/AuthContext";
 
 
 
 
 const AllCard = () => {
       const [data, setData] = useState([]);
+
+      const {user} =useContext(AuthContext)
 
   useEffect(() => {
     fetch("index.json")
@@ -35,7 +38,7 @@ const AllCard = () => {
     </div>
     <h1 className="font-bold text-xl">Price: {e.price}$</h1>
     <div className="card-actions justify-end">
-      <Link to={`/cardDetails/${e.toyId}`}>
+      <Link to={user?`/cardDetails/${e.toyId}`:'/login'}>
       <button className="btn btn-primary w-full">View More</button>
       </Link>
     </div>

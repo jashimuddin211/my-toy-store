@@ -52,7 +52,7 @@ const Navbar = () => {
               </ul>
             </div>
           ) : (
-            <NavLink to="/register">Register</NavLink>
+            <NavLink to="/login">Login</NavLink>
           )}
         </div>
       </div>
