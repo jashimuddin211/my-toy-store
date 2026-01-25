@@ -29,11 +29,11 @@ path:'login',
 Component:Login,
     },
     {
-      path:'/cardDetails/:id',
-      loader: async ({ params }) => {
+      path: '/cardDetails/:id',
+  loader: async ({ params }) => {
     const res = await fetch('/index.json');
     const data = await res.json();
-    return data.find(card => card.toyId === params.id);
+    return data.find(card => card.toyId === Number(params.id));
   },
       Component:CardDetails,
     }
