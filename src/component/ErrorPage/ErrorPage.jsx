@@ -1,6 +1,7 @@
 import React from 'react';
 import img from "../../assets/image.png"
 import Navbar from '../Navbar/Navbar';
+import Footer from '../footer/Footer';
 
 
 const ErrorPage = () => {
@@ -12,6 +13,7 @@ const ErrorPage = () => {
                 <img className='' src={img} alt="" />
             </div>
         </div>
+        <Footer></Footer>
         </div>
     );
 };

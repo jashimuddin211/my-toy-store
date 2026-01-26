@@ -11,6 +11,7 @@ import Register from './component/register/Register.jsx';
 import CardDetails from './component/allcard/CardDetails.jsx';
 import Login from './component/register/Login.jsx';
 import ErrorPage from './component/ErrorPage/ErrorPage.jsx';
+import Profile from './component/Profile/Profile.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
     {
 path:'login',
 Component:Login,
+    },
+    {
+path:'/profile',
+element:
+    <Profile></Profile>
+  
     },
     {
       path: '/cardDetails/:id',

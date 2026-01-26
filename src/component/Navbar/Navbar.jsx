@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../context/AuthContext';
 
 const Navbar = () => {
@@ -49,6 +49,7 @@ const Navbar = () => {
                 <li onClick={handleSignOut}>
                   <a>Logout</a>
                 </li>
+                <Link to='/profile'>My Profile</Link>
               </ul>
             </div>
           ) : (
