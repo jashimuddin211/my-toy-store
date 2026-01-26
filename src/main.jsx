@@ -10,11 +10,14 @@ import AuthProvider from './context/AuthProvider.jsx';
 import Register from './component/register/Register.jsx';
 import CardDetails from './component/allcard/CardDetails.jsx';
 import Login from './component/register/Login.jsx';
+import ErrorPage from './component/ErrorPage/ErrorPage.jsx';
+
 
 const router = createBrowserRouter([
  {
    path: "/",
    Component:Root,
+   errorElement:<ErrorPage></ErrorPage>,
    children:[
     {
       index:true,
