@@ -8,8 +8,8 @@ This project is built as a **Single Page Application (SPA)** with Firebase Authe
 ---
 
 ##  Live Website
-**Live URL:** https://your-live-site-link.netlify.app  
-**GitHub Repository:** https://github.com/your-username/toytopia-client
+**Live URL:** https://fascinating-cascaron-eb0e9b.netlify.app/ 
+**GitHub Repository:** https://github.com/jashimuddin211/my-toy-store.git
 
 ---
 
