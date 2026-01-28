@@ -1,12 +1,15 @@
 import React from 'react';
 import { useLoaderData } from 'react-router';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import useTitle from '../../Hooks/useTitle';
 
 const CardDetails = () => {
+  useTitle('ToyInfo')
     const toy = useLoaderData()
 
-    const handleSubmit =()=>{
-        <ToastContainer />
+    const handleSubmit =(e)=>{
+         e.preventDefault();   
+  toast.success("Form submitted successfully!");
     }
     
 
@@ -57,6 +60,7 @@ const CardDetails = () => {
         </div>
 
       </div>
+       <ToastContainer />
     </div>
     );
 };

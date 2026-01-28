@@ -1,9 +1,13 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import { Link } from 'react-router';
+import useTitle from '../../Hooks/useTitle';
 
 
 const Login = () => {
+const [email, setEmail] = useState("");
+useTitle('Login')
+
   const { singInUser, signInWithGoogle, loading } = useContext(AuthContext);
 
   // 🔹 Email & Password Login
@@ -54,6 +58,12 @@ const Login = () => {
           {loading ? 'Logging in...' : 'Login'}
         </button>
       </form>
+      <br />
+       <p>
+          <Link to="/forget" state={{ email }}>
+            Forget Password?
+          </Link>
+        </p>
 
       <div className="text-center mt-4">
         <button

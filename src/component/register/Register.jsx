@@ -1,10 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { toast, ToastContainer } from 'react-toastify';
+import useTitle from '../../Hooks/useTitle';
 
 const Register = () => {
   const { signInWithGoogle, createUser } = useContext(AuthContext);
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  useTitle('Register')
 
   // 🔹 Google Sign In
   const handleGoogleSignIn = () => {
@@ -29,15 +35,15 @@ const Register = () => {
 
     // 🔐 Password validation
     if (password.length < 6) {
-      setError("Password must be at least 6 characters long");
+      toast.error("Password must be at least 6 characters long");
       return;
     }
     if (!/[A-Z]/.test(password)) {
-      setError("Password must contain at least one uppercase letter");
+      toast.error("Password must contain at least one uppercase letter");
       return;
     }
     if (!/[a-z]/.test(password)) {
-      setError("Password must contain at least one lowercase letter");
+      toast.error("Password must contain at least one lowercase letter");
       return;
     }
 
@@ -98,15 +104,24 @@ const Register = () => {
                   required
                 />
 
-                {/* Password */}
+                {/* Password with Eye Toggle */}
                 <label className="label">Password</label>
-                <input
-                  type="password"
-                  name="password"
-                  className="input"
-                  placeholder="Password"
-                  required
-                />
+                <div className="relative">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    className="input w-full"
+                    placeholder="Password"
+                    required
+                  />
+                  <span
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-gray-600"
+                    title={showPassword ? "Hide password" : "Show password"}
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
+                </div>
 
                 {error && (
                   <p className="text-red-600 text-sm mt-2">
@@ -139,6 +154,7 @@ const Register = () => {
             </form>
           </div>
         </div>
+<ToastContainer></ToastContainer>
       </div>
     </div>
   );
